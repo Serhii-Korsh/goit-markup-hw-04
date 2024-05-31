@@ -251,8 +251,8 @@ img {
   background: #f4f4fd;
   padding-top: 24px;
   padding-bottom: 24px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 8px;
 }
 
@@ -355,9 +355,9 @@ img {
   color: #f4f4fd;
   background: #4d5ae5;
   height: 100%;
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
   transform: translateY(100%);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-four-li:hover .images-cover-text {
@@ -431,6 +431,7 @@ img {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-four-div {
@@ -494,5 +495,9 @@ img {
 }
 
 .link-icon-footer:hover .link-icon-li {
+  background-color: #31d0aa;
+}
+
+.link-icon-footer:focus .link-icon-li {
   background-color: #31d0aa;
 }
